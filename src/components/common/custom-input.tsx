@@ -9,12 +9,12 @@ interface CustomInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   control: Control<any>;
   name: string;
   label?: string;
-  prepend?: ReactNode; // Element to the left
-  append?: ReactNode; // Element to the right
+  prepend?: ReactNode;
+  append?: ReactNode;
   inputClassName?: string;
   containerClassName?: string;
   formLabelClassName?: string;
-  wrapperClassName?: string; // For the "Pill" container
+  wrapperClassName?: string;
 }
 
 const CustomInput: React.FC<CustomInputProps> = ({
@@ -90,7 +90,7 @@ const CustomInput: React.FC<CustomInputProps> = ({
 
           {fieldState.invalid && (
             <FieldError
-              className="text-red-500 mt-2"
+              className="text-red-500 -mt-1"
               errors={[fieldState.error]}
             />
           )}

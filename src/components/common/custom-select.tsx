@@ -114,7 +114,10 @@ const CustomSelect: React.FC<
           </div>
 
           {fieldState.invalid && (
-            <FieldError className="text-red-500" errors={[fieldState.error]} />
+            <FieldError
+              className="text-red-500 -mt-1"
+              errors={[fieldState.error]}
+            />
           )}
         </Field>
       )}
