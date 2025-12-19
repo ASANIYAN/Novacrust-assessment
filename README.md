@@ -10,7 +10,6 @@ Requirements
 Install dependencies
 
 ```bash
-cd /Users/asaniyanayomidepaul/Documents/work/interview-tasks/novacrust-assessment
 npm install
 ```
 
