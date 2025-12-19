@@ -38,5 +38,3 @@ npm run test
 - Validation uses Zod with preprocessors to normalize input before validation; this centralizes validation but transforms the raw entry.
 - React Hook Form error values may be strings or objects; UI components normalize errors to avoid TypeScript mismatches.
 - UI and accessibility are intentionally minimal for the assessment — full i18n, formatting variants, and exhaustive edge-case handling are out of scope.
-
-<!-- End of README -->
