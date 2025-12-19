@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap");
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --radius-xxx: 30px;
+
+  --color-main: #013941;
+  --color-sub-main: #ccf6e5;
+  --color-disabled: #f2f2f2;
+  --color-secondary: #e0e0e0;
+  --color-tertiary: #fcfcfc;
+  --color-placeholder: #828282;
+
+  --font-outfit: "Outfit", sans-serif;
+  --font-instrument-sans: "Instrument Sans", sans-serif;
+
+  --animate-fade-in: fade-in 0.15s ease-out;
+  --animate-slide-in-right: slide-in-right 0.15s ease-out;
+  --animate-slide-in-left: slide-in-left 0.15s ease-out;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
