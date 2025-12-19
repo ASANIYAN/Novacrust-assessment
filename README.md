@@ -34,7 +34,6 @@ npm run test
 
 ## Assumptions and trade-offs
 
-- Phone input accepts digits and hyphens on entry; hyphens are removed internally so stored values are digits-only (see `src/lib/schema.ts`).
-- Validation uses Zod with preprocessors to normalize input before validation; this centralizes validation but transforms the raw entry.
-- React Hook Form error values may be strings or objects; UI components normalize errors to avoid TypeScript mismatches.
-- UI and accessibility are intentionally minimal for the assessment — full i18n, formatting variants, and exhaustive edge-case handling are out of scope.
+- Phone input accepts digits and hyphens on entry. Hyphens are removed internally so stored values are digits only.
+- Validation uses Zod with preprocessors to normalize input before validation. This centralizes validation but transforms the raw entry.
+- UI and accessibility are intentionally minimal for the assessment. A full i18n is out of scope.
