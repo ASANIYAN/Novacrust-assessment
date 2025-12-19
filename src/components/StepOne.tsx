@@ -7,7 +7,6 @@ interface StepOneProps {
   control: Control<TransferFormType>;
 }
 
-// Mock bank data - replace with your actual bank list
 const BANKS = [
   { value: "access", label: "Access Bank" },
   { value: "gtbank", label: "Guaranty Trust Bank" },
