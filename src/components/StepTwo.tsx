@@ -21,7 +21,7 @@ const StepTwo = ({ control }: StepTwoProps) => {
 
       <CustomInput
         control={control}
-        name="recipientPhoneNumber" // Corrected to match your schema!
+        name="recipientPhoneNumber"
         label="Recipient phone number"
         placeholder="000 - 000 - 00000"
         type="tel"
